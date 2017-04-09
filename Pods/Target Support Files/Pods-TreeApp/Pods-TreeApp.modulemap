@@ -1,0 +1,6 @@
+framework module Pods_TreeApp {
+  umbrella header "Pods-TreeApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

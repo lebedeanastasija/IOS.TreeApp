@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDE52717601C30832BF1128E /* Pods_TreeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB6A1E8ACDF2D79F2ECBE75 /* Pods_TreeApp.framework */; };
 		D0CDA54B1E9A3E33003F43E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDA54A1E9A3E33003F43E3 /* AppDelegate.swift */; };
 		D0CDA54D1E9A3E33003F43E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDA54C1E9A3E33003F43E3 /* ViewController.swift */; };
 		D0CDA5501E9A3E33003F43E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CDA54E1E9A3E33003F43E3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99BD9F986533D79939DC9A00 /* Pods-TreeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TreeApp/Pods-TreeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CDA5471E9A3E33003F43E3 /* TreeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0CDA54A1E9A3E33003F43E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0CDA54C1E9A3E33003F43E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		D0CDA5511E9A3E33003F43E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0CDA5541E9A3E33003F43E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0CDA5561E9A3E33003F43E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB6A1E8ACDF2D79F2ECBE75 /* Pods_TreeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5004F25DD8D39542687D13 /* Pods-TreeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TreeApp/Pods-TreeApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE52717601C30832BF1128E /* Pods_TreeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92C706C4B7F71C9BA41EC557 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99BD9F986533D79939DC9A00 /* Pods-TreeApp.debug.xcconfig */,
+				FF5004F25DD8D39542687D13 /* Pods-TreeApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7A9AB4EE81298136ECA4942 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDB6A1E8ACDF2D79F2ECBE75 /* Pods_TreeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0CDA53E1E9A3E33003F43E3 = {
 			isa = PBXGroup;
 			children = (
 				D0CDA5491E9A3E33003F43E3 /* TreeApp */,
 				D0CDA5481E9A3E33003F43E3 /* Products */,
+				92C706C4B7F71C9BA41EC557 /* Pods */,
+				C7A9AB4EE81298136ECA4942 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0CDA5591E9A3E33003F43E3 /* Build configuration list for PBXNativeTarget "TreeApp" */;
 			buildPhases = (
+				E46989DE91F9D519D2CD779A /* [CP] Check Pods Manifest.lock */,
 				D0CDA5431E9A3E33003F43E3 /* Sources */,
 				D0CDA5441E9A3E33003F43E3 /* Frameworks */,
 				D0CDA5451E9A3E33003F43E3 /* Resources */,
+				2E30AE0012564A8373E9633B /* [CP] Embed Pods Frameworks */,
+				12F406F8A744BAC9BB048195 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12F406F8A744BAC9BB048195 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TreeApp/Pods-TreeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E30AE0012564A8373E9633B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TreeApp/Pods-TreeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E46989DE91F9D519D2CD779A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0CDA5431E9A3E33003F43E3 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		D0CDA55A1E9A3E33003F43E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99BD9F986533D79939DC9A00 /* Pods-TreeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TreeApp/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		D0CDA55B1E9A3E33003F43E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5004F25DD8D39542687D13 /* Pods-TreeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TreeApp/Info.plist;
